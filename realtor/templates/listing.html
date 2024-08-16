@@ -1,0 +1,17 @@
+{% extends "base.html"  %}
+
+{% block content %}
+
+<div class="flex flex-col ">
+    <p class="text-xl font-bold">{{ listing.title }}</p>
+    <p>Price : {{ listing.price }}</p>
+    <p>Location: {{ listing.address }}</p>
+</div>
+
+<div class="mt-1">
+    <a href="./edit" class="p-2 bg-cyan-900 text-white ">Update</a>
+    <a href="./delete" class="p-2 bg-cyan-900 text-white ">Delete</a>
+</div>
+
+
+{% endblock content %}
